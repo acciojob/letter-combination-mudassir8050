@@ -12,9 +12,9 @@ function letterCombinations(input) {
 		
 	}
 	let solution= [];
-	function solve(currentIndex, calculateString) {
+	function solve(currentIndex, calculatedString) {
 		if(input.length <=currentIndex){
-			solution.push(calculateString);
+			solutions.push(calculatedString);
 			return;
 		}
 		let currentChar=input[currentIndex]
@@ -26,6 +26,7 @@ function letterCombinations(input) {
 
 solve(0, "")
 return solutions;
+}
 
 
 module.exports = letterCombinations;
