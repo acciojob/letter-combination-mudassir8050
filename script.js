@@ -6,20 +6,20 @@ function letterCombinations(input) {
 		"4": "ghi",
 		"5": "jkl",
 		"6": "mno",
-		"7":"prqs",
+		"7":"pqrs",
 		"8":"tuv",
 		"9":"wxyz"
 		
 	}
 	let solution= [];
 	function solve(currentIndex, calculatedString) {
-		if(input.length <=currentIndex){
+		if(input.length <= currentIndex){
 			solutions.push(calculatedString);
 			return;
 		}
 		let currentChar=input[currentIndex]
 		for(let i=0; i<table[currentChar]).length; i++){
-		solve(currentIndex+1, calculatedString+table[currentChar])
+		solve(currentIndex + 1, calculatedString + table[currentChar])
 		
 	}
 }
