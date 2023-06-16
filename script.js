@@ -11,15 +11,15 @@ function letterCombinations(input) {
 		"9":"wxyz"
 		
 	}
-	let solution=[];
+	let solution= [];
 	function solve(currentIndex, calculateString) {
 		if(input.length <=currentIndex){
 			solution.push(calculateString);
 			return;
 		}
-		let currentIndex=input[currentIndex]
-		for(let i=0; i<table[currentChar]).length;
-		solve(currentIndex+1, calculateString+table[currentChar])
+		let currentChar=input[currentIndex]
+		for(let i=0; i<table[currentChar]).length; i++){
+		solve(currentIndex+1, calculatedString+table[currentChar])
 		
 	}
 }
